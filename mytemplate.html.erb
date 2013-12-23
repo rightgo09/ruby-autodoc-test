@@ -1,0 +1,14 @@
+<%# coding: UTF-8 -%>
+<h1><%= title %></h1>
+<p><%= description %></p>
+<%= parameters_section %>
+<h2>Example</h2>
+<pre>
+<%= method %> <%= request.path %><%= request_query %> <%= request_http_version %>
+<%= request_header %><%= request_body_section %>
+</pre>
+
+<pre>
+<%= response_http_version %> <%= response.status %>
+<%= response_header %><%= response_body_section %>
+</pre>
